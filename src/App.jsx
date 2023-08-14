@@ -8,8 +8,6 @@ function App() {
   return (
     <div className='container border border-solid max-w-max'>
 
-      
-
       <NavigationBar></NavigationBar>
 
       <div className='flex flex-row'>
