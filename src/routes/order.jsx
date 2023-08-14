@@ -5,7 +5,15 @@ export function Order(){
 
     return(
     <div>
-        
+        <OrderItem></OrderItem>
+        <OrderItem></OrderItem>
+        <OrderItem></OrderItem>
+        <OrderItem></OrderItem>
+        <OrderItem></OrderItem>
+        <OrderItem></OrderItem>
+        <OrderItem></OrderItem>
+        <OrderItem></OrderItem>
+        <OrderItem></OrderItem>
 
 
     </div>

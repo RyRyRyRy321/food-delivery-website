@@ -6,7 +6,7 @@ import { MainContent } from './components/main-content'
 function App() {
 
   return (
-    <div className='container border border-solid max-w-max'>
+    <div className='container max-w-max'>
 
       <NavigationBar></NavigationBar>
 

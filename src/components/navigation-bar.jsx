@@ -2,7 +2,7 @@ import { NavigationBarList } from "./nav-bar-list";
 
 export function NavigationBar(){
     return (
-    <nav className='nav-bar w-full h-20 border border-solid'>
+    <nav className='nav-bar w-full h-20 border border-solid sticky top-0'>
         <div className="h-full flex flex-row justify-between items-center">
         
         <img className='w-14 h-14 rounded-full ms-7 me-10 border'></img>
