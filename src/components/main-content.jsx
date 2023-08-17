@@ -7,7 +7,7 @@ export function MainContent(){
     return (
       <main className='border border-solid w-screen'>
 
-        <FoodPage></FoodPage>
+        <Home></Home>
 
 
       

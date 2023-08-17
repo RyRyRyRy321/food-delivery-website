@@ -1,4 +1,3 @@
-import './App.css'
 import { NavigationBar } from './components/navigation-bar'
 import { SideBar } from './components/side-bar'
 import { MainContent } from './components/main-content'
