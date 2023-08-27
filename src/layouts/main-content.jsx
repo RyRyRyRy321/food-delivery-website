@@ -9,9 +9,7 @@ export function MainContent(){
 
   return (
     <main className='border border-solid w-screen'>
-
-      <Profile></Profile>
-    
+      <Home></Home>
     </main>
   );
 }
