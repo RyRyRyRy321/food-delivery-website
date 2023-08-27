@@ -22,16 +22,11 @@ export function Profile(){
 
             </div>
             <div>
+                <h2 className="text-lg font-bold m-2">Addresses</h2>
 
-                <h2>Addresses</h2>
-
-                
                 <AddressCard></AddressCard>
                 <AddressCard></AddressCard>
                 <AddressCard></AddressCard>
-
-
-
             </div>
         </div>
 

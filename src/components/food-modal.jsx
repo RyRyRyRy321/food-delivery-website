@@ -20,7 +20,7 @@ export function FoodModal() {
 
       <Dialog className="relative z-50" open={isOpen} onClose={closeModal}>
 
-        <div className="fixed inset-0 bg-black bg-opacity-25"/>
+        <div className="fixed inset-0 bg-outlay bg-opacity-25"/>
 
 
         <div className='fixed inset-0 flex items-center justify-center p-4'>

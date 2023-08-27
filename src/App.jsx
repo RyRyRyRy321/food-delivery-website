@@ -1,6 +1,6 @@
-import { NavigationBar } from './components/navigation-bar'
-import { SideBar } from './components/side-bar'
-import { MainContent } from './components/main-content'
+import { NavigationBar } from './layouts/navigation-bar'
+import { SideBar } from './layouts/side-bar'
+import { MainContent } from './layouts/main-content'
 
 function App() {
 
