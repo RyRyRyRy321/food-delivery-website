@@ -4,12 +4,13 @@ import { Home } from "../routes/home";
 import { Order } from "../routes/order";
 import { Profile } from "../routes/profile";
 import { FoodModal } from "../components/food-modal";
+import { Outlet } from "react-router-dom";
 
 export function MainContent(){
 
   return (
     <main className='border border-solid w-screen'>
-      <Home></Home>
+      <Outlet></Outlet>
     </main>
   );
 }
