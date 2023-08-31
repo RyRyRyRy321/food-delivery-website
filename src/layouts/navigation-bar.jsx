@@ -4,10 +4,10 @@ import { BsBasket, BsFillBellFill } from "react-icons/bs";
 
 export function NavigationBar(){
     return (
-    <nav className='nav-bar bg-color-3 w-full h-20 border border-solid sticky top-0'>
+    <nav className='nav-bar drop-shadow bg-color-3 w-full h-20 sticky top-0'>
         <div className="h-full flex flex-row justify-between items-center">
         
-        <img className='w-14 h-14 rounded-full ms-7 me-10 border'></img>
+        <img className='w-14 h-14 rounded-full ms-20 me-10 border'></img>
         
         <ul className='list-none flex flex-row items-center me-auto'>
           <NavigationBarList name="Home" path="/"></NavigationBarList>
