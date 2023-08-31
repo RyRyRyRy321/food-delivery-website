@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { NavigationBarList } from "../components/nav-bar-list";
 import { BsBasket, BsFillBellFill } from "react-icons/bs";
 
@@ -15,9 +16,9 @@ export function NavigationBar(){
         <ul className='list-none flex flex-row items-center '>
 
           <li className="me-4">
-            <button>
+            <Link to="order">
               <BsBasket></BsBasket>
-            </button>
+            </Link>
           </li>
 
           <li className="me-6">
