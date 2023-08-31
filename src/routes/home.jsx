@@ -5,7 +5,7 @@ export function Home(){
     return(
         <div className="m-10">
             <div className="flex justify-center">
-                <div className="carousel w-full rounded-2xl border border-solid h-72 mt-5 mb-5">
+                <div className="carousel shadow w-full rounded-2xl h-72 mt-5 mb-5">
 
                 </div>
             </div>

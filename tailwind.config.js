@@ -12,7 +12,8 @@ export default {
       'color-4': '#000000',
       'color-5': '#E0E0CE',
       'outlay': '#000000',
-      'light-dark': '#2D3047'
+      'light-dark': '#2D3047',
+      'food-item-color': '#C5C6D0'
     },
     extend: {},
   },
