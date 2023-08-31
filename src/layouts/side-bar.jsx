@@ -7,10 +7,10 @@ export function SideBar(){
       <div className="fixed h-full mt-5">
         <div className=' flex flex-col justify-center'>
           <ul className='list-none'>
-            <SideBarList name="Best Deals" />
-            <SideBarList name="Breakfast" />
-            <SideBarList name="Appetizers" />
-            <SideBarList name="Drinks" />
+            <SideBarList path="food-page" name="Best Deals" />
+            <SideBarList path="food-page" name="Breakfast" />
+            <SideBarList path="food-page" name="Appetizers" />
+            <SideBarList path="food-page" name="Drinks" />
           </ul>
         </div>
       </div>
