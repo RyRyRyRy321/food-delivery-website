@@ -10,7 +10,7 @@ export function NavigationBar(){
         <img className='w-14 h-14 rounded-full ms-7 me-10 border'></img>
         
         <ul className='list-none flex flex-row items-center me-auto'>
-          <NavigationBarList name="Menu"></NavigationBarList>
+          <NavigationBarList name="Home" path="/"></NavigationBarList>
         </ul>
 
         <ul className='list-none flex flex-row items-center '>

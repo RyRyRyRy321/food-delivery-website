@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 
-export function NavigationBarList({name}){
+export function NavigationBarList({name, path}){
     return(
         <li>
-            <a className='m-4 font-bold' href=''>{name}</a>
+            <Link className='m-4 font-bold' to = {path}>{name}</Link>
         </li>
     );
 }
