@@ -1,4 +1,5 @@
 import { FoodItemComponent } from "../components/food-item";
+import { FoodDisplayContent } from "../layouts/food-display-page";
 
 
 export function Home(){
@@ -10,21 +11,7 @@ export function Home(){
                 </div>
             </div>
 
-          
-
-
-          <div className="w-full grid grid-cols-4 gap-10 p-2">
-              <FoodItemComponent></FoodItemComponent>
-              <FoodItemComponent></FoodItemComponent>
-              <FoodItemComponent></FoodItemComponent>
-              <FoodItemComponent></FoodItemComponent>
-
-              <FoodItemComponent></FoodItemComponent>
-              <FoodItemComponent></FoodItemComponent>
-              <FoodItemComponent></FoodItemComponent>
-              <FoodItemComponent></FoodItemComponent>
-
-          </div>
+          <FoodDisplayContent></FoodDisplayContent>
         </div>
     )
 }
