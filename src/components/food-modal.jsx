@@ -22,14 +22,14 @@ export function FoodModal() {
 
         <div className="fixed inset-0 bg-outlay bg-opacity-25"/>
 
-
         <div className='fixed inset-0 flex items-center justify-center p-4'>
-          <Dialog.Panel className="bg-background rounded-lg p-5 shadow">
-            <Dialog.Title className="font-bold text-center m-2">Use different flavors</Dialog.Title>
-            
-            <div className='flex flex-row'>
+          <Dialog.Panel className="bg-background rounded-lg p-5 shadow">            
+            <div className='flex flex-row p-2'>
               <img className='w-36 h-36 shadow'></img>
-              <p>Food Item Name #1</p>
+              <div className='flex flex-col items-center ms-5'>
+                <span className='font-bold'>Food Item #1</span>
+
+              </div>
             </div>
 
             <div className='mb-2 mt-2 text-center font-bold'>Choose your flavor</div>

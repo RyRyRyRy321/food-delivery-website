@@ -7,8 +7,8 @@ export function Profile(){
         
         <div>
             
-            <div className="flex flex-row w-full items-center">
-                <img className="w-32 h-32 border rounded-full m-5" src = "https://image-placeholder.com/images/actual-size/1920x1080.png1">
+            <div className="flex flex-row items-center m-5 shadow">
+                <img className="w-32 h-32 rounded-full shadow m-5" src = "https://image-placeholder.com/images/actual-size/1920x1080.png1">
                     
                 </img>
 
@@ -22,7 +22,7 @@ export function Profile(){
 
             </div>
             <div>
-                <h2 className="text-lg font-bold m-2">Addresses</h2>
+                <h2 className="text-lg font-bold m-5">Addresses</h2>
 
                 <AddressCard></AddressCard>
                 <AddressCard></AddressCard>
