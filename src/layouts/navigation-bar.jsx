@@ -29,8 +29,9 @@ export function NavigationBar(){
 
 
           <li>
-            <a className='me-12 font-bold' href=''>Log In</a>
-          </li> 
+            <Link className='me-12 font-bold text-light-dark' to="profile">Log in</Link>
+          </li>
+
         </ul>
 
         
