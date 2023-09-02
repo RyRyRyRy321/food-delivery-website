@@ -1,3 +1,4 @@
+import { FoodModal } from "./food-modal";
 
 export function FoodItemComponent({img_link = "https://image-placeholder.com/images/actual-size/1920x1080.png", foodTitle = "Default Title", foodPrice = "₱100.0"}){
     return (
@@ -11,6 +12,8 @@ export function FoodItemComponent({img_link = "https://image-placeholder.com/ima
                         <span className='ms-3 mt-2 text-light-dark text-xl font-bold'>{foodTitle}</span>
                         <span className='ms-3 mt-3 text-base font-bold text-color-3'>{foodPrice}</span>
                     </div>
+
+                    <FoodModal></FoodModal>
                 </div>
                 
             </div>
