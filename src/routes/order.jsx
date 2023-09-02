@@ -5,11 +5,8 @@ export function Order(){
 
     return(
 
-    <>
-        <div className="columns-2">
-            <OrderItem></OrderItem>
-            <OrderItem></OrderItem>
-            <OrderItem></OrderItem>
+    <div className="p-3">
+        <div className="columns-1">
             <OrderItem></OrderItem>
             <OrderItem></OrderItem>
             <OrderItem></OrderItem>
@@ -23,14 +20,15 @@ export function Order(){
                 <span>Subtotal: $9999.99</span>
                 <span>Discounts: $9999.99</span>
                 <span>Delivery fee: $9999.99</span>
-                <span className="text-lg font-bold">Total Price: $9999.99</span>
                 <hr></hr>
-                <button className="w-24">Checkout</button>
+                <span className="text-lg font-bold">Total Price: $9999.99</span>
+                
+                <button className="w-24 border rounded drop-shadow border-radius">Checkout</button>
             </div>
 
             
         </div>
-    </>
+    </div>
 
     );
     

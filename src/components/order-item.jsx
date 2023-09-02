@@ -1,11 +1,12 @@
 
 export function OrderItem({itemName = "Food Item #1", itemPrice = "₱9999.99", quantity = "999"}){
     return(
-        <div className="w-full max-h-full flex flex-row justify-start p-2">
-            <img className="w-36 h-36 rounded border border-solid"></img>
+        <div className="w-full max-h-full shadow flex flex-row justify-start mb-5 p-5">
+            <img className="w-36 h-36 shadow rounded border-solid"></img>
 
 
             <div className="flex flex-col">
+
                 <div className="flex flex-col ms-7 mb-14 mt-1">
                     <span className="text-left font-bold text-lg">{itemName}</span>
                     <span className="text-left">{itemPrice}</span>
