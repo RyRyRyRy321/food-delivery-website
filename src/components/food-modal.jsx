@@ -3,21 +3,10 @@ import { Fragment, useState } from 'react'
 import { OrderItem } from './order-item'
 import { FoodVariety } from './food-variety'
 
-export function FoodModal() {
-  let [isOpen, setIsOpen] = useState(false)
-
-  function closeModal() {
-    setIsOpen(false)
-  }
-
-  function openModal() {
-    setIsOpen(true)
-  }
+export function FoodModal({isOpen, setIsOpen, closeModal}) {
 
   return (
     <>
-      <button onClick={openModal}>Open modal</button>
-
       <Dialog className="relative z-50" open={isOpen} onClose={closeModal}>
 
         <div className="fixed inset-0 bg-outlay bg-opacity-25"/>
@@ -59,8 +48,8 @@ export function FoodModal() {
               </div>
 
               <div className='m-1'>
-                <button className='bg-color-3 text-light-dark rounded-2xl shadow p-2 m-1 font-bold' onClick={() => setIsOpen(false)}>Continue ₱1000</button>
-                <button className='bg-color-3 text-error-color rounded-2xl shadow p-2 m-1 font-bold' onClick={() => setIsOpen(false)}>Cancel</button>
+                <button className='bg-color-3 text-light-dark rounded-2xl shadow p-2 m-1 font-bold' onClick={closeModal}>Continue ₱1000</button>
+                <button className='bg-color-3 text-error-color rounded-2xl shadow p-2 m-1 font-bold' onClick={closeModal}>Cancel</button>
               </div>
               
             </div>
@@ -68,7 +57,6 @@ export function FoodModal() {
             
           </Dialog.Panel>
         </div>
-
       </Dialog>
     </>
   )
