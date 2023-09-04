@@ -1,4 +1,4 @@
-import { FoodItemModal } from "./foodItem-modal";
+import { FoodItemModal } from "./FoodModal/foodItem-modal";
 import { useState } from "react";
 
 

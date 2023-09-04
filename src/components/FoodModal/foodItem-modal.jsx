@@ -1,6 +1,5 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
-import { OrderItem } from './order-item'
 import { FoodVarietyModal } from './food-variety-modal'
 import { FoodItemHeaderModal } from './foodItem-header-modal'
 
