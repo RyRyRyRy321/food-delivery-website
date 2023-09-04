@@ -2,17 +2,17 @@
 export function OrderItem({itemName = "Food Item #1", itemPrice = "₱9999.99", quantity = "999"}){
     return(
         <div className="w-full max-h-full shadow flex flex-row justify-start mb-5 p-5">
-            <img className="w-36 h-36 shadow rounded border-solid"></img>
+            <img className="w-24 h-24 shadow rounded border-solid"></img>
 
 
             <div className="flex flex-col">
 
-                <div className="flex flex-col ms-7 mb-14 mt-1">
+                <div className="flex flex-col ms-2 mb-2 mt-1">
                     <span className="text-left font-bold text-lg">{itemName}</span>
                     <span className="text-left">{itemPrice}</span>
                 </div>
 
-                <div className="flex flex-row ms-7">
+                <div className="flex flex-row ms-2">
                     <button className="m-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-dash" viewBox="0 0 16 16">
                             <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>

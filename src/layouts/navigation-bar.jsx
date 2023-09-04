@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { NavigationBarList } from "../components/nav-bar-list";
 import { BsBasket, BsFillBellFill } from "react-icons/bs";
+import { CartButton } from "../components/cart-button";
 
 export function NavigationBar(){
     return (
@@ -16,9 +17,7 @@ export function NavigationBar(){
         <ul className='list-none flex flex-row items-center '>
 
           <li className="me-4">
-            <Link to="order">
-              <BsBasket></BsBasket>
-            </Link>
+            <CartButton></CartButton>
           </li>
 
           <li className="me-6">

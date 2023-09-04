@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import { Order } from './routes/order.jsx'
 import { Profile } from './routes/profile.jsx'
 import { FoodPage } from './routes/food-page.jsx'
 import { Home } from './routes/home.jsx'
@@ -17,10 +16,6 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home></Home>
-      },
-      {
-        path: "order",
-        element: <Order></Order>
       },
       {
         path: "profile",
