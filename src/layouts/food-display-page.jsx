@@ -1,4 +1,4 @@
-import { FoodItemComponent } from "../components/food-item";
+import { FoodItemComponent } from "../components/foodItem-card";
 import { PageNavigation } from "../components/page-navigate";
 
 

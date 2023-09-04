@@ -1,4 +1,3 @@
-import { FoodItemComponent } from "../components/food-item";
 import { FoodDisplayContent } from "../layouts/food-display-page";
 
 

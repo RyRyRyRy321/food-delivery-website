@@ -1,5 +1,3 @@
-import { FoodItemComponent } from "../components/food-item";
-import { PageNavigation } from "../components/page-navigate";
 import { FoodDisplayContent } from "../layouts/food-display-page";
 
 

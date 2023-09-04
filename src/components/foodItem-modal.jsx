@@ -1,9 +1,10 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import { OrderItem } from './order-item'
-import { FoodVariety } from './food-variety'
+import { FoodVarietyModal } from './food-variety-modal'
+import { FoodItemHeaderModal } from './foodItem-header-modal'
 
-export function FoodModal({isOpen, setIsOpen, closeModal}) {
+export function FoodItemModal({isOpen, setIsOpen, closeModal}) {
 
   return (
     <>
@@ -13,20 +14,14 @@ export function FoodModal({isOpen, setIsOpen, closeModal}) {
 
         <div className='fixed inset-0 flex items-center justify-center p-4'>
           <Dialog.Panel className="bg-background rounded-lg p-5 shadow">            
-            <div className='flex flex-row p-2'>
-              <img className='w-36 h-36 shadow'></img>
-              <div className='flex flex-col items-center ms-5'>
-                <span className='font-bold'>Food Item #1</span>
-
-              </div>
-            </div>
+            <FoodItemHeaderModal></FoodItemHeaderModal>
 
             <div className='mb-2 mt-2 text-center font-bold'>Choose your flavor</div>
             <hr className='m-2 bg-black'></hr>
             
-            <FoodVariety></FoodVariety>
-            <FoodVariety></FoodVariety>
-            <FoodVariety></FoodVariety>
+            <FoodVarietyModal></FoodVarietyModal>
+            <FoodVarietyModal></FoodVarietyModal>
+            <FoodVarietyModal></FoodVarietyModal>
 
             <div className='flex flex-row '>
               <div className='justify-items-center self-center space-x-1'>

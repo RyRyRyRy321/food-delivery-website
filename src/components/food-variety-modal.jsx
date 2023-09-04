@@ -1,5 +1,5 @@
 
-export function FoodVariety({itemName = "Food Item #1", itemPrice = "₱9999.99", quantity = "999"}){
+export function FoodVarietyModal({itemName = "Food Item #1", itemPrice = "₱9999.99", quantity = "999"}){
     return (
         <div className="flex flex-row m-2">
             <img className="w-24 h-24 rounded shadow"></img>

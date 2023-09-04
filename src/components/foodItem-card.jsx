@@ -1,4 +1,4 @@
-import { FoodModal } from "./food-modal";
+import { FoodItemModal } from "./foodItem-modal";
 import { useState } from "react";
 
 
@@ -28,7 +28,7 @@ export function FoodItemComponent({img_link = "https://image-placeholder.com/ima
                     
                 </div>
 
-                <FoodModal isOpen={isOpen} setIsOpen={openModal} closeModal={closeModal}></FoodModal>
+                <FoodItemModal isOpen={isOpen} setIsOpen={openModal} closeModal={closeModal}></FoodItemModal>
             </>
 
        
