@@ -6,16 +6,19 @@ export function FoodDisplayContent(){
     return (
 
         <>
-            <div className="w-full grid grid-cols-4 gap-4 p-2 mb-5">
-                    <FoodItemComponent></FoodItemComponent>
-                    <FoodItemComponent></FoodItemComponent>
-                    <FoodItemComponent></FoodItemComponent>
-                    <FoodItemComponent></FoodItemComponent>
-                    <FoodItemComponent></FoodItemComponent>
-                    <FoodItemComponent></FoodItemComponent>
-                    <FoodItemComponent></FoodItemComponent>
-                    <FoodItemComponent></FoodItemComponent>
+            <div className="flex flex-row justify-center">
+                <div className="grid grid-cols-4 gap-4 p-2 mb-5 ">
+                        <FoodItemComponent></FoodItemComponent>
+                        <FoodItemComponent></FoodItemComponent>
+                        <FoodItemComponent></FoodItemComponent>
+                        <FoodItemComponent></FoodItemComponent>
+                        <FoodItemComponent></FoodItemComponent>
+                        <FoodItemComponent></FoodItemComponent>
+                        <FoodItemComponent></FoodItemComponent>
+                        <FoodItemComponent></FoodItemComponent>
+                </div>
             </div>
+            
 
             <PageNavigation></PageNavigation>
         

@@ -12,6 +12,11 @@ export function NavigationBar(){
         
         <ul className='list-none flex flex-row items-center me-auto'>
           <NavigationBarList name="Home" path="/"></NavigationBarList>
+          <NavigationBarList path="food-page" name="Best Deals" />
+          <NavigationBarList path="food-page" name="Breakfast" />
+          <NavigationBarList path="food-page" name="Appetizers" />
+          <NavigationBarList path="food-page" name="Drinks" />
+
         </ul>
 
         <ul className='list-none flex flex-row items-center '>

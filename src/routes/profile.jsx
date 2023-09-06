@@ -5,7 +5,7 @@ export function Profile(){
 
     return (
         
-        <div>
+        <div className="w-full">
             
             <div className="flex flex-row items-center m-5 shadow">
                 <img className="w-32 h-32 rounded-full shadow m-5" src = "https://image-placeholder.com/images/actual-size/1920x1080.png1">

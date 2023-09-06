@@ -4,7 +4,7 @@ export function MainContent(){
 
   return (
     
-    <main className='bg-background w-screen'>
+    <main className='flex justify-center bg-background w-screen p-5'>
       <Outlet></Outlet>
     </main>
 
