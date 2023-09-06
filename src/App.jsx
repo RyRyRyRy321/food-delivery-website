@@ -1,6 +1,7 @@
 import { NavigationBar } from './layouts/navigation-bar'
 import { SideBar } from './layouts/side-bar'
 import { MainContent } from './layouts/main-content'
+import { Footer } from './layouts/footer'
 
 function App() {
 
@@ -10,11 +11,10 @@ function App() {
       <NavigationBar></NavigationBar>
 
       <div className='flex flex-row'>
-        <SideBar></SideBar>
         <MainContent></MainContent>
       </div>
 
-
+      <Footer></Footer>
       
     </div>
 
