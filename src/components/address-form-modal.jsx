@@ -20,18 +20,22 @@ export function AddressFormModal({isOpen, closeModal}){
                 <Dialog.Panel className="bg-background rounded-lg p-5 shadow">
 
                     <div className='flex flex-col'>
-                        <h1 className='text-center font-bold'>Update Address</h1>
-                    
+                        <input className='p-2 rounded' type = 'text' placeholder='Receiver name'></input>
 
-                    <form className='flex flex-col' onSubmit={handleSubmit} >
-                        <input className = 'm-1 p-2 w-96' type='text' placeholder='No. (Include Building Name)'></input>
-                        <input className = 'm-1 p-2 w-96' type='text' placeholder='Street'></input>
-                        <input className = 'm-1 p-2 w-96' type='text' placeholder='Barangay/Subdivision'></input>
-                        <input className = 'm-1 p-2 w-96' type='text' placeholder='District/Municipality'></input>
-                        <input className = 'm-1 p-2 w-96' type='text' placeholder='City/Province'></input>
+                        <h1 className='m-1 font-bold'>Address</h1>
+                    <form onSubmit={handleSubmit} >
+                        <div className='grid grid-cols-3 gap-2'>
+                            <input className = 'p-2 rounded' type='text' placeholder='Building No.'></input>
+                            <input className = 'p-2 rounded' type='text' placeholder='Street'></input>
+                            <input className = 'p-2 rounded' type='text' placeholder='Barangay/Subdivision'></input>
+                            <input className = 'p-2 rounded' type='text' placeholder='District/Municipality'></input>
+                            <input className = 'p-2 rounded' type='text' placeholder='City/Province'></input>
+                        </div>
+                        <div className='flex flex-row space-x-2 mt-2 justify-end'>
+                            <button className=' p-1 border rounded' type='submit'>Update</button>
+                            <button className=' p-1 border rounded' onClick={closeModal}>Cancel</button>
+                        </div>
                         
-                        <button type='submit'>Update</button>
-                        <button onClick={closeModal}>Cancel</button>
                     </form>
                     </div> 
                 </Dialog.Panel>

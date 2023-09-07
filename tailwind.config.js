@@ -13,8 +13,10 @@ export default {
       'color-5': '#E0E0CE',
       'outlay': '#000000',
       'light-dark': '#2D3047',
+      'white': '#ffffff',
       'food-item-color': '#C5C6D0',
-      'error-color': '#DA1000'
+      'error': '#DA1000',
+      'warning': '#FFC107'
     },
     extend: {},
   },

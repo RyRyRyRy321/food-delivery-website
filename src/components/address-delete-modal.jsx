@@ -14,12 +14,14 @@ export function AddressDeleteModal({isOpen, closeModal}){
                 
                 <Dialog.Panel className="bg-background rounded-lg p-5 shadow">
 
-                    <h1>Delete Address?</h1>
+                    <h1 className='font-bold'>Delete Address?</h1>
                     
-                    <p>This will delete the current address PERMANENTLY.</p>
-
-                    <button onClick={closeModal}>Delete</button>
-                    <button onClick={closeModal}>Cancel</button>
+                    <p>This will delete the current address <span className='font-bold'>PERMANENTLY</span>.</p>
+                    <div className="flex flex-row space-x-2 mt-2">
+                        <button className='p-1 border rounded' onClick={closeModal}>Delete</button>
+                        <button className='p-1 border rounded' onClick={closeModal}>Cancel</button>
+                    </div>
+                    
                     
                 </Dialog.Panel>
                 </div>

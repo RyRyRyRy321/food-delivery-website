@@ -23,7 +23,7 @@ export function FoodItemModal({isOpen, setIsOpen, closeModal}) {
             <FoodVarietyModal></FoodVarietyModal>
 
             <div className='flex flex-row '>
-              <div className='justify-items-center self-center space-x-1'>
+              <div className='justify-items-center self-center space-x-2'>
                 
                 <button className="rounded-2xl shadow p-2 bg-color-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-dash" viewBox="0 0 16 16">
@@ -31,7 +31,7 @@ export function FoodItemModal({isOpen, setIsOpen, closeModal}) {
                     </svg>
                 </button>
 
-                <span className="">9999</span>
+                <span>9999</span>
 
                 <button className="rounded-2xl shadow p-2 bg-color-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-plus" viewBox="0 0 16 16">
@@ -42,8 +42,8 @@ export function FoodItemModal({isOpen, setIsOpen, closeModal}) {
               </div>
 
               <div className='m-1'>
-                <button className='bg-color-3 text-light-dark rounded-2xl shadow p-2 m-1 font-bold' onClick={closeModal}>Continue ₱1000</button>
-                <button className='bg-color-3 text-error-color rounded-2xl shadow p-2 m-1 font-bold' onClick={closeModal}>Cancel</button>
+                <button className='bg-color-3 text-light-dark rounded-2xl shadow p-2 m-1' onClick={closeModal}>Continue ₱1000</button>
+                <button className='bg-error text-light-dark rounded-2xl shadow p-2 m-1' onClick={closeModal}>Cancel</button>
               </div>
               
             </div>
