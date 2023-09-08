@@ -6,13 +6,13 @@ export function AddressDeleteModal({isOpen, closeModal}){
         <>
             <Dialog className="relative z-50" open={isOpen} onClose={closeModal}>
 
-                <div className="fixed inset-0 bg-outlay bg-opacity-25"/>
+                <div className="fixed inset-0 bg-black-200 bg-opacity-25"/>
 
                 <div className='fixed inset-0 flex items-center justify-center p-4'>
 
                 
                 
-                <Dialog.Panel className="bg-background rounded-lg p-5 shadow">
+                <Dialog.Panel className="bg-white-100 rounded-lg p-5 shadow">
 
                     <h1 className='font-bold'>Delete Address?</h1>
                     

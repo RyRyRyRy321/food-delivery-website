@@ -5,7 +5,7 @@ import { CartButton } from "../components/cart-button";
 
 export function NavigationBar(){
     return (
-    <nav className='nav-bar drop-shadow bg-color-3 w-full h-20 sticky top-0'>
+    <nav className='nav-bar drop-shadow bg-green-100 w-full h-20 sticky top-0'>
         <div className="h-full flex flex-row justify-between items-center">
         
         <img className='w-14 h-14 rounded-full ms-20 me-10 border'></img>

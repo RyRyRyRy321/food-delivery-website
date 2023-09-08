@@ -8,7 +8,7 @@ export function OrderModal({isOpen, closeModal}){
 
             <div className='fixed overflow-y-auto top-0 right-0 flex items-center justify-center p-4'>
         
-            <Dialog.Panel className="bg-background h-[95vh] overflow-y-auto rounded-lg p-5 shadow me-5">            
+            <Dialog.Panel className="bg-white-100 h-[95vh] overflow-y-auto rounded-lg p-5 shadow me-5">            
                 <div className="flex flex-col">
                     <h1 className="font-bold text-center">Orders</h1>
                 

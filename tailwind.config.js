@@ -6,17 +6,30 @@ export default {
   ],
   theme: {
     colors: {
-      'background': '#EBEBEB',
-      'secondary': '#4DA167',
-      'color-3': '#3BC14A',
-      'color-4': '#000000',
-      'color-5': '#E0E0CE',
-      'outlay': '#000000',
-      'light-dark': '#2D3047',
-      'white': '#ffffff',
-      'food-item-color': '#C5C6D0',
-      'error': '#DA1000',
-      'warning': '#FFC107'
+
+      green: {
+        100: '#3BC14A',
+        200: '#4DA167',
+        300: '4E6E5D',
+      },
+
+      black: {
+        100: '#2D3047',
+        200: '#000000'
+      },
+
+      white: {
+        100: '#ffffff'
+      },
+
+      red: {
+        100: '#DA1000'
+      },
+
+      yellow: {
+        100: '#FFC107'
+      }
+
     },
     extend: {},
   },
