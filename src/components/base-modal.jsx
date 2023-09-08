@@ -1,11 +1,11 @@
 import { Dialog } from "@headlessui/react";
 
-export function BaseModal({children, modalConfiguration}){
+export function BaseModal({children, open, onClose}){
 
     return (
 
     <>
-      <Dialog className="relative z-50" open = {modalConfiguration.open} onClose={modalConfiguration.onClose} >
+      <Dialog className="relative z-50" open = {open} onClose={onClose} >
 
         <div className="fixed inset-0 bg-black-200 bg-opacity-25"/>
 
