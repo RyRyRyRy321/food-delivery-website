@@ -15,7 +15,7 @@ export function FoodItemModal({isOpen, setIsOpen, closeModal}) {
           <Dialog.Panel className="bg-white-100 rounded-lg p-5 shadow">            
             <FoodItemHeaderModal></FoodItemHeaderModal>
 
-            <div className='mb-2 mt-2 text-center font-bold'>Choose your flavor</div>
+            <div className='mb-2 mt-2 text-center font-bold text-black-100'>Choose your flavor</div>
             <hr className='m-2 bg-black'></hr>
             
             <FoodVarietyModal></FoodVarietyModal>
@@ -42,8 +42,8 @@ export function FoodItemModal({isOpen, setIsOpen, closeModal}) {
               </div>
 
               <div className='m-1'>
-                <button className='bg-color-3 text-light-dark rounded-2xl shadow p-2 m-1' onClick={closeModal}>Continue ₱1000</button>
-                <button className='bg-error text-light-dark rounded-2xl shadow p-2 m-1' onClick={closeModal}>Cancel</button>
+                <button className='bg-color-3 text-black-100 rounded-2xl shadow p-2 m-1' onClick={closeModal}>Continue ₱1000</button>
+                <button className='bg-error text-black-100 rounded-2xl shadow p-2 m-1' onClick={closeModal}>Cancel</button>
               </div>
               
             </div>

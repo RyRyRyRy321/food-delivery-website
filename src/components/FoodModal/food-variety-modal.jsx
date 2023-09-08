@@ -6,8 +6,8 @@ export function FoodVarietyModal({itemName = "Food Item #1", itemPrice = "₱999
 
             <div className="flex flex-col">
                 <div className="flex flex-col ms-7 mb-1 mt-1">
-                    <span className="text-left font-bold text-lg">{itemName}</span>
-                    <span className="text-left">{itemPrice}</span>
+                    <span className="text-left font-bold text-lg text-black-100">{itemName}</span>
+                    <span className="text-left text-black-100">{itemPrice}</span>
                 </div>
 
                 <div className="flex flex-row ms-7 space-x-2">
@@ -18,7 +18,7 @@ export function FoodVarietyModal({itemName = "Food Item #1", itemPrice = "₱999
                     </svg>
                 </button>
 
-                <span className="text-light-dark">{quantity}</span>
+                <span className="text-black-100">{quantity}</span>
 
                 <button className="rounded-2xl shadow p-2 bg-color-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-plus" viewBox="0 0 16 16">

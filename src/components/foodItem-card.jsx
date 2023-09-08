@@ -21,7 +21,7 @@ export function FoodItemComponent({img_link = "https://image-placeholder.com/ima
                     
                     <div className="flex flex-row">
                         <div className='w-full h-24 flex flex-col items-start'>
-                            <span className='ms-3 mt-2 text-light-dark text-xl font-bold'>{foodTitle}</span>
+                            <span className='ms-3 mt-2 text-black-100 text-xl font-bold'>{foodTitle}</span>
                             <span className='ms-3 mt-3 text-base font-bold text-green-100'>{foodPrice}</span>
                         </div>
                     </div>

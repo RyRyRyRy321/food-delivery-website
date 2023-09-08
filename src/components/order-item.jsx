@@ -8,8 +8,8 @@ export function OrderItem({itemName = "Food Item #1", itemPrice = "₱9999.99", 
             <div className="flex flex-col">
 
                 <div className="flex flex-col ms-2 mb-2 mt-1">
-                    <span className="text-left font-bold text-lg">{itemName}</span>
-                    <span className="text-left">{itemPrice}</span>
+                    <span className="text-left font-bold text-lg text-black-100">{itemName}</span>
+                    <span className="text-left text-black-100">{itemPrice}</span>
                 </div>
 
                 <div className="flex flex-row ms-2">
@@ -19,7 +19,7 @@ export function OrderItem({itemName = "Food Item #1", itemPrice = "₱9999.99", 
                         </svg>
                     </button>
 
-                    <span className="m-1">{quantity}</span>
+                    <span className="text-black-100 m-1">{quantity}</span>
 
                     <button className="m-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-plus" viewBox="0 0 16 16">
