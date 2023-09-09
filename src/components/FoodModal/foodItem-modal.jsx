@@ -5,18 +5,20 @@ export function FoodItemModal({ isOpen, closeModal }) {
 
 
   return (
-    <>
-      <BaseModal open={isOpen} onClose={closeModal}
-        children={
-          <div>
-            <FoodItemHeaderModal></FoodItemHeaderModal>
-            <FoodItemBodyModal></FoodItemBodyModal>
-            <FoodItemFooterModal continueFunction={closeModal} closeFunction={closeModal}></FoodItemFooterModal>
-          </div>
-        }>
-      </BaseModal>
-    </>
+    <BaseModal open={isOpen}
+      onClose={closeModal}
+      children={<FoodItemContent continueFunction={closeModal} closeFunction={closeModal}></FoodItemContent>}></BaseModal>
   )
+}
+
+function FoodItemContent({continueFunction, closeFunction}) {
+  return (
+    <div>
+      <FoodItemHeaderModal></FoodItemHeaderModal>
+      <FoodItemBodyModal></FoodItemBodyModal>
+      <FoodItemFooterModal continueFunction={continueFunction} closeFunction={closeFunction}></FoodItemFooterModal>
+    </div>
+  );
 }
 
 function FoodItemHeaderModal() {
