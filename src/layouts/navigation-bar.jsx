@@ -35,22 +35,21 @@ export function NavigationBar() {
 
         <img className='w-14 h-14 rounded-full ms-20 me-10 border'></img>
 
-        <ul className='list-none flex flex-row items-center me-auto'>
+        <ul className='list-none flex flex-row items-center space-x-3 me-auto'>
           <NavigationBarList name="Home" path="/"></NavigationBarList>
           <NavigationBarList path="food-page" name="Best Deals" />
           <NavigationBarList path="food-page" name="Breakfast" />
           <NavigationBarList path="food-page" name="Appetizers" />
           <NavigationBarList path="food-page" name="Drinks" />
-
         </ul>
 
-        <ul className='list-none flex flex-row items-center '>
+        <ul className='me-12 list-none flex flex-row items-center space-x-3'>
 
-          <li className="me-4">
+          <li>
             <CartButton></CartButton>
           </li>
 
-          <li className="me-6">
+          <li>
             <button>
               <BsFillBellFill></BsFillBellFill>
             </button>
@@ -58,16 +57,21 @@ export function NavigationBar() {
 
 
           <li>
-            <Link className='me-12 font-bold text-light-dark' to="profile">Profile</Link>
-            <button className='me-12 font-bold text-light-dark' onClick={openLoginModal}>Log in</button>
-            <button className='me-12 font-bold text-light-dark' onClick={openRegisterModal}>Register</button>
+            <Link className='font-bold text-black-100' to="profile">Profile</Link>
+          </li>
+
+          <li>
+            <button className='font-bold text-black-100' onClick={openLoginModal}>Log in</button>
+          </li>
+
+          <li>
+            <button className='font-bold text-black-100' onClick={openRegisterModal}>Register</button>
           </li>
 
         </ul>
 
         <LoginModal isOpen={isLoginOpen} onClose={closeLoginModal}></LoginModal>
         <RegisterModal isOpen={isRegisterOpen} onClose={closeRegisterModal}></RegisterModal>
-
       </div>
     </nav>
   );
