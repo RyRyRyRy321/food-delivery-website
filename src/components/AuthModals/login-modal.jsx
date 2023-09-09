@@ -1,7 +1,7 @@
 import { BaseModal } from "../base-modal";
 
-export function LoginModal({ isOpen = false, onClose = () => {console.log("Hello world")} }) {
-    
+export function LoginModal({ isOpen, onClose }) {
+
     return (
         <BaseModal open={isOpen} onClose={onClose} children={<LoginContent></LoginContent>}></BaseModal>
     );
@@ -44,23 +44,23 @@ function LoginContent() {
     );
 }
 
-function LoginForm(){
+function LoginForm() {
 
     const defaultSubmitFunction = (event) => {
         event.preventDefault();
     }
 
-    
-    return (
-            <form onSubmit={defaultSubmitFunction}>
-                <div className="flex flex-col m-2">
-                    <input className="m-1 border rounded" type="email" placeholder="Email" />
-                    <input className="m-1 border rounded" type="password" placeholder="Password" />
-                </div>
 
-                <div className="flex flex-row justify-end">
-                    <button className="border rounded m-2" type="submit">Login</button>
-                </div>
-            </form>
+    return (
+        <form onSubmit={defaultSubmitFunction}>
+            <div className="flex flex-col m-2">
+                <input className="m-1 border rounded" type="email" placeholder="Email" />
+                <input className="m-1 border rounded" type="password" placeholder="Password" />
+            </div>
+
+            <div className="flex flex-row justify-end">
+                <button className="border rounded m-2" type="submit">Login</button>
+            </div>
+        </form>
     );
 }
