@@ -57,15 +57,15 @@ export function NavigationBar() {
 
 
           <li>
-            <Link className='font-bold text-black-100' to="profile">Profile</Link>
+            <Link className='font-bold text-black-100 hover:text-black-200' to="profile">Profile</Link>
           </li>
 
           <li>
-            <button className='font-bold text-black-100' onClick={openLoginModal}>Log in</button>
+            <button className='font-bold text-black-100 hover:text-black-200' onClick={openLoginModal}>Log in</button>
           </li>
 
           <li>
-            <button className='font-bold text-black-100' onClick={openRegisterModal}>Register</button>
+            <button className='font-bold text-black-100 hover:text-black-200' onClick={openRegisterModal}>Register</button>
           </li>
 
         </ul>
