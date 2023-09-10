@@ -28,6 +28,10 @@ export default {
 
       yellow: {
         100: '#FFC107'
+      },
+
+      gray: {
+        100: "#E5E5E5"
       }
 
     },

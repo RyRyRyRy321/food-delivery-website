@@ -15,7 +15,7 @@ export function FoodItemComponent({img_link = "https://image-placeholder.com/ima
 
     return (
             <>
-                <div className='max-w-sm shadow rounded-2xl flex flex-col shadow cursor-pointer hover:ring hover:ring-black-100' onClick={openModal}>
+                <div className='max-w-sm shadow rounded-2xl flex flex-col shadow cursor-pointer hover:bg-gray-100' onClick={openModal}>
 
                     <img className='w-full h-full object-cover rounded-t-2xl' src = {img_link} ></img>    
                     
