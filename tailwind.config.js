@@ -9,6 +9,7 @@ export default {
 
       green: {
         100: '#3BC14A',
+        101: '#35AD42',
         200: '#4DA167',
         300: '4E6E5D',
       },

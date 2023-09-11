@@ -12,8 +12,10 @@ function LoginContent() {
         <div className="flex flex-col justify-center p-2">
             <div className="flex flex-col justify-center items-center">
                 <img className="w-16 h-16 rounded-full border m-2"></img>
-                <h2 className="text-center font-bold">Sign In</h2>
+                <h2 className="text-black-100 1text-center font-bold">Sign In</h2>
             </div>
+
+            <div className="mb-12"></div>
 
             <LoginForm></LoginForm>
 
@@ -23,7 +25,7 @@ function LoginContent() {
 
 
 
-            <button>Create a New Account</button>
+            <button className="text-black-100">Create a New Account</button>
         </div>
     );
 }
@@ -38,10 +40,10 @@ function LoginForm() {
     return (
         <form onSubmit={defaultSubmitFunction}>
             <div className="flex flex-col m-2 space-y-2">
-                <input className="w-64 border rounded p-2" type="email" placeholder="Email" />
-                <input className="w-64 border rounded p-2" type="password" placeholder="Password" />
+                <input className="w-64 border shadow rounded p-2" type="email" placeholder="Email" />
+                <input className="w-64 border shadow rounded p-2" type="password" placeholder="Password" />
 
-                <button className="border rounded-2xl p-2" type="submit">Login</button>
+                <button className="shadow rounded-2xl p-1 bg-green-100 text-white-100 font-bold hover:bg-green-101" type="submit">Sign In</button>
             </div>
 
 
@@ -53,7 +55,7 @@ function SocialMediaLinks() {
 
     return (
         <div className="flex flex-col justify-center">
-            <span className="text-center mb-2">Sign in with:</span>
+            <span className="text-center mb-2 text-black-100">Sign in with:</span>
 
             <div className="flex flex-row space-x-1 justify-center">
 
