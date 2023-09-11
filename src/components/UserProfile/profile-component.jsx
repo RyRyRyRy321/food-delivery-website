@@ -21,14 +21,26 @@ export function UserProfile() {
 }
 
 export function AddressTable() {
-    return (
-        <div>
-            <h2 className="text-lg font-bold m-5 text-black-100">Addresses</h2>
 
-            <AddressCard></AddressCard>
-            <AddressCard></AddressCard>
-            <AddressCard></AddressCard>
-        </div>
+
+    return (
+
+        <>
+            <div className="flex flex-row justify-between m-1">
+                <h2 className="text-lg font-bold text-black-100 m-1">Addresses</h2>
+
+                <button className="m-1">
+                    Add Address
+                </button>
+            </div>
+
+            <div>
+
+                <AddressCard></AddressCard>
+                <AddressCard></AddressCard>
+                <AddressCard></AddressCard>
+            </div>
+        </>
     );
 }
 
