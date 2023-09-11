@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { AddressCard } from "../../components/address-card";
+import { AddressFormModal } from "../address-form-modal";
 
 
 export function UserProfile() {
@@ -22,6 +24,15 @@ export function UserProfile() {
 
 export function AddressTable() {
 
+    const [openModal, setOpenModal] = useState(false);
+
+    function openCreateAddressFormModal(){
+        setOpenModal(true);
+    }
+
+    function closeCreateAddressFormModal(){
+        setOpenModal(false);
+    }
 
     return (
 
@@ -29,7 +40,7 @@ export function AddressTable() {
             <div className="flex flex-row justify-between m-1">
                 <h2 className="text-lg font-bold text-black-100 m-1">Addresses</h2>
 
-                <button className="m-1">
+                <button onClick={openCreateAddressFormModal} className="m-1">
                     Add Address
                 </button>
             </div>
@@ -40,6 +51,8 @@ export function AddressTable() {
                 <AddressCard></AddressCard>
                 <AddressCard></AddressCard>
             </div>
+
+            <AddressFormModal isOpen={openModal} onClose={closeCreateAddressFormModal}></AddressFormModal>
         </>
     );
 }
