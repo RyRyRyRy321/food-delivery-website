@@ -51,7 +51,7 @@ export function NavigationBar() {
 
           <li>
             <button>
-              <BsFillBellFill></BsFillBellFill>
+              <BsFillBellFill className="w-5 h-5"></BsFillBellFill>
             </button>
           </li>
 

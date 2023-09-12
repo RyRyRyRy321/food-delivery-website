@@ -1,4 +1,4 @@
-import { BsBasket } from "react-icons/bs";
+import { BsCart3 } from "react-icons/bs";
 import { OrderModal } from "./order-modal";
 import { useState } from "react";
 
@@ -18,7 +18,7 @@ export function CartButton(){
     return (
         <>
             <button onClick={openModal}>
-                <BsBasket></BsBasket>
+                <BsCart3 className="w-5 h-5"></BsCart3>
             </button>
 
             <OrderModal isOpen={isOpen} setIsOpen={openModal} closeModal={closeModal}></OrderModal>
