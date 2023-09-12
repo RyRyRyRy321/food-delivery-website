@@ -1,5 +1,6 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { BaseModal } from '../base-modal';
+import { BsDashCircle, BsPlusCircle } from "react-icons/bs";
 
 export function FoodItemModal({ isOpen, closeModal }) {
 
@@ -11,9 +12,9 @@ export function FoodItemModal({ isOpen, closeModal }) {
   )
 }
 
-function FoodItemContent({continueFunction, closeFunction}) {
+function FoodItemContent({ continueFunction, closeFunction }) {
   return (
-    <div>
+    <div className='flex flex-col justify-center justify-items-center'>
       <FoodItemHeaderModal></FoodItemHeaderModal>
       <FoodItemBodyModal></FoodItemBodyModal>
       <FoodItemFooterModal continueFunction={continueFunction} closeFunction={closeFunction}></FoodItemFooterModal>
@@ -35,51 +36,49 @@ function FoodItemHeaderModal() {
 
 function FoodItemBodyModal() {
   return (
-    <>
+    <div className='m-2'>
       <div className='mb-2 mt-2 text-center font-bold text-black-100'>Choose your flavor</div>
       <hr className='m-2 bg-black'></hr>
+      <div className='h-80 overflow-y-auto p-1 space-y-1'>
+        <FoodVarietyModal></FoodVarietyModal>
+        <FoodVarietyModal></FoodVarietyModal>
+        <FoodVarietyModal></FoodVarietyModal>
+      </div>
 
-      <FoodVarietyModal></FoodVarietyModal>
-      <FoodVarietyModal></FoodVarietyModal>
-      <FoodVarietyModal></FoodVarietyModal>
-    </>
+
+    </div>
 
   );
 }
 
 function FoodItemFooterModal({ continueFunction, closeFunction }) {
   return (
-    <div className='flex flex-row '>
+    <div className=' flex flex-row m-1 space-x-2'>
+
       <div className='justify-items-center self-center space-x-2'>
 
-        <button className="rounded-2xl shadow p-2 bg-color-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-dash" viewBox="0 0 16 16">
-            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
-          </svg>
+        <button>
+          <BsDashCircle className='text-black-100'></BsDashCircle>
         </button>
 
-        <span>9999</span>
+        <span className="text-black-100">9999</span>
 
-        <button className="rounded-2xl shadow p-2 bg-color-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-plus" viewBox="0 0 16 16">
-            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-          </svg>
+        <button>
+          <BsPlusCircle className='text-black-100'></BsPlusCircle>
         </button>
 
       </div>
 
-      <div className='m-1'>
-        <button className='bg-color-3 text-black-100 rounded-2xl shadow p-2 m-1' onClick={continueFunction}>Continue ₱1000</button>
-        <button className='bg-error text-black-100 rounded-2xl shadow p-2 m-1' onClick={closeFunction}>Cancel</button>
-      </div>
-
+      <button className='p-2 border shadow rounded-2xl border-black-100 text-black-100 hover:bg-black-100 hover:text-white-100' onClick={continueFunction}>Continue ₱1000</button>
+      <button className='p-2 border shadow rounded-2xl border-black-100 text-black-100 hover:bg-black-100 hover:text-white-100' onClick={closeFunction}>Cancel</button>
     </div>
+
   )
 }
 
 function FoodVarietyModal({ itemName = "Food Item #1", itemPrice = "₱9999.99", quantity = "999" }) {
   return (
-    <div className="flex flex-row m-2">
+    <div className="flex flex-row">
       <img className="w-24 h-24 rounded shadow"></img>
 
       <div className="flex flex-col">
@@ -90,18 +89,14 @@ function FoodVarietyModal({ itemName = "Food Item #1", itemPrice = "₱9999.99",
 
         <div className="flex flex-row ms-7 space-x-2">
 
-          <button className="rounded-2xl shadow p-2 bg-color-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-dash" viewBox="0 0 16 16">
-              <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
-            </svg>
+          <button>
+            <BsDashCircle className='text-black-100'></BsDashCircle>
           </button>
 
           <span className="text-black-100">{quantity}</span>
 
-          <button className="rounded-2xl shadow p-2 bg-color-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-plus" viewBox="0 0 16 16">
-              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg>
+          <button>
+            <BsPlusCircle className='text-black-100'></BsPlusCircle>
           </button>
 
         </div>
