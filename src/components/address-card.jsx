@@ -27,7 +27,7 @@ export function AddressCard({ name = "Receiver name", phoneNumber = "09345641471
 
     return (
         <>
-            <div className="flex flex-col justify-items-center p-5 m-5 rounded shadow">
+            <div className="flex flex-col justify-items-center p-2 rounded shadow">
                 <div className="userInformation flex flex-row">
                     <span className="m-1 font-bold text-black-100">{name}</span>
                     <span className="m-1 text-black-100">{phoneNumber}</span>
@@ -52,7 +52,7 @@ export function AddressCard({ name = "Receiver name", phoneNumber = "09345641471
                 </div>
             </div>
 
-            <AddressFormModal isOpen={isOpen} onClose={closeModal}></AddressFormModal>
+            <AddressFormModal title="Update Address" isOpen={isOpen} onClose={closeModal}></AddressFormModal>
             <AddressDeleteModal isOpen={isDeleteOpen} onClose={closeDeleteModal}></AddressDeleteModal>
 
         </>

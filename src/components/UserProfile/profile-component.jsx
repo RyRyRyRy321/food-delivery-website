@@ -45,14 +45,14 @@ export function AddressTable() {
                 </button>
             </div>
 
-            <div>
+            <div className="flex flex-col space-y-2 m-1">
 
                 <AddressCard></AddressCard>
                 <AddressCard></AddressCard>
                 <AddressCard></AddressCard>
             </div>
 
-            <AddressFormModal isOpen={openModal} onClose={closeCreateAddressFormModal}></AddressFormModal>
+            <AddressFormModal title="Create Address" isOpen={openModal} onClose={closeCreateAddressFormModal}></AddressFormModal>
         </>
     );
 }
