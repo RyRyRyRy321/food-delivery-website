@@ -4,8 +4,8 @@ export function OrderModal({ isOpen, closeModal }) {
     return (
         <Dialog className="relative z-50" open={isOpen} onClose={closeModal}>
 
-            <div className='fixed overflow-y-auto top-0 right-0 flex items-center justify-center p-4'>
-                <Dialog.Panel className="bg-white-100 h-[95vh] overflow-y-auto rounded-lg p-5 shadow me-5">
+            <div className='fixed top-0 right-0 flex items-center justify-center p-4'>
+                <Dialog.Panel className="bg-white-100 h-[95vh] rounded-lg p-5 shadow me-5">
                     <OrderModalContent></OrderModalContent>
                 </Dialog.Panel>
             </div>
@@ -18,9 +18,9 @@ export function OrderModal({ isOpen, closeModal }) {
 function OrderModalContent() {
     return (
         <div className="flex flex-col">
-            <h1 className="font-bold text-center">Orders</h1>
+            <h1 className="font-bold text-center">Cart</h1>
 
-            <div className="columns-1">
+            <div className="flex flex-col h-[28rem] overflow-y-auto mb-5">
                 <OrderItem></OrderItem>
                 <OrderItem></OrderItem>
                 <OrderItem></OrderItem>
@@ -36,7 +36,7 @@ function OrderModalContent() {
 
 function OrderItem({ itemName = "Food Item #1", itemPrice = "₱9999.99", quantity = "999" }) {
     return (
-        <div className="w-full max-h-full shadow flex flex-row justify-start mb-5 p-5">
+        <div className="w-full max-h-full shadow flex flex-row justify-start p-2">
             <img className="w-24 h-24 shadow rounded border-solid"></img>
 
 
@@ -87,7 +87,9 @@ function OrderPriceList() {
             <hr></hr>
             <span className="text-lg font-bold">Total Price: $9999.99</span>
 
-            <button className="w-24 border rounded drop-shadow border-radius">Checkout</button>
+            <div className="mb-2"></div>
+
+            <button className="p-1 border shadow rounded-2xl border-black-100 text-black-100 hover:bg-black-100 hover:text-white-100">Checkout</button>
         </div>
     );
 }

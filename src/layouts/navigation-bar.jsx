@@ -6,6 +6,7 @@ import { LoginModal } from "../components/AuthModals/login-modal";
 
 import { useState } from "react";
 import { RegisterModal } from "../components/AuthModals/register-modal";
+import { NotificationPopOver } from "../components/notification-popover";
 
 export function NavigationBar() {
 
@@ -50,9 +51,7 @@ export function NavigationBar() {
           </li>
 
           <li>
-            <button>
-              <BsFillBellFill className="w-5 h-5"></BsFillBellFill>
-            </button>
+            <NotificationPopOver></NotificationPopOver>
           </li>
 
 
